@@ -1,0 +1,125 @@
+#violentometre-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#violentometre-start {
+  text-align: center;
+}
+
+#start-quiz {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: var(--primary-500, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#step-counter {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  color: var(--text-secondary, #555);
+}
+
+.quiz-question {
+  margin-bottom: 2rem;
+}
+
+.quiz-question h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-question p {
+  font-style: italic;
+  color: var(--text-secondary, #555);
+  margin-bottom: 1rem;
+}
+
+.quiz-answers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quiz-answer-option {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--primary-200, #d8b4fe);
+  border-radius: 12px;
+  cursor: pointer;
+  background: white;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.quiz-answer-option:hover {
+  background: var(--primary-50, #f5f3ff);
+  border-color: var(--primary-400, #a78bfa);
+}
+
+/*
+.quiz-answer-option.selected {
+  background: var(--primary-200, #d8b4fe);
+  border-color: var(--primary-600, #7c3aed);
+  color: white;
+}
+  */
+
+.quiz-answer-option.selected {
+  background-color: #a3d5ff;
+  border: 2px solid var(--primary-800);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.prev-question-btn,
+.show-result-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: var(--gray-200, #e5e7eb);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.show-result-btn {
+  background: var(--primary-500, #7c3aed);
+  color: white;
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zone-vert {
+  background: #eafaf1;
+  border-left: 8px solid #1abc9c;
+  color: #1a5340;
+}
+
+.zone-orange {
+  background: #fff8e6;
+  border-left: 8px solid #f39c12;
+  color: #a15e00;
+}
+
+.zone-rouge {
+  background: #fdecea;
+  border-left: 8px solid #e74c3c;
+  color: #8e1b12;
+}

@@ -1,0 +1,53 @@
+
+////////////////////////////////////////////
+
+En prod : 
+
+Tester formulaire d'inscipriton newsletter
+Utiliser un link broken + vérfi 404
+Régler les méta pour les partages d'articles, etc... 
+Activer complianz cookie consent
+Template mecenes : partage sur linkedin
+Vérifier les plugins à supprimer (svg)
+
+Page accessibilité
+Page éco conception
+
+Avant le passage en production, reprendre les articles et pages mises à jour
+
+Liens d'accès rapides (a11Y)
+Lien quitter le site > Vers quoi
+
+////////////////////////////////////////////
+
+Retour réunion 11/12 : 
+
+Retirer le 39 19 dans le site > remplacer par "Faire un don"
+
+Homepage : 3 bulles > Solfa en 3 mots > Actualités > Parituclier ou entreprise > Au plus près de vous > Financeurs et partenaires + suppression faites un don
+
+Retirer "Mécenes" du menu desktop
+
+Menu : "Actions" en "Projets" > Retirer du header desktop
+"Fonds de dotation" > "Nous soutenir"
+Page "Nous soutenir" > Choix "Vous êtes un particulier" ou "Vous êtes une entreprise".
+
+Renommer page "L'association" en "Qui sommes nous"
+Ajouter des boutons dans chaque section pour renvoyer vers les pôles, et créer des pages vers les 3 missions
+
+Menu principal : "recrutement"
+Ajouter fonctionnalité "recrutement"
+En attente du contenu par Solfa
+
+
+Changement d'objectif du site > Plus récupération de fonds, mais vitrine de Solfa
+
+Baisse l'ombre du menu sur desktop
+
+Revoir les photos intégralement, pas sûr d'avoir les droits ni les autorisations
+
+Date de sorti prévisionnelle : 22 janvier
+
+
+
+

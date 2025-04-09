@@ -1,0 +1,1028 @@
+/*
+Theme Name: Solfa V2
+Theme URL: https://www.solfa.fr
+Version: V2
+*/
+
+/*********************** VARIABLES ***********************/
+
+:root {
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+
+  --primary-100: rgba(242, 237, 247, 1);
+  --primary-300: rgba(197, 163, 236, 1);
+  --primary-500: rgba(132, 84, 189, 1);
+  --primary-700: rgba(95, 64, 131, 1);
+  --primary-900: rgba(51, 19, 89, 1);
+  --secondary-100: rgba(224, 241, 235, 1);
+  --secondary-300: rgba(151, 236, 205, 1);
+  --secondary-500: rgba(53, 188, 139, 1);
+  --secondary-700: rgb(9, 120, 105);
+  --secondary-900: rgba(7, 92, 81, 1);
+  --tertiary-100: rgba(219, 239, 255, 1);
+  --tertiary-300: rgba(134, 193, 242, 1);
+  --tertiary-500: rgba(59, 143, 212, 1);
+  --tertiary-700: rgba(27, 110, 182, 1);
+  --tertiary-900: rgba(21, 81, 130, 1);
+  --ui_color-white: rgba(255, 255, 255, 1);
+  --ui_color-white_ambiant: rgba(250, 248, 245, 1);
+  --ui_color-grey: rgba(90, 90, 90, 1);
+  --ui_color-redmax: rgba(193, 39, 95, 1);
+  --ui_color-redmin: rgba(250, 238, 242, 1);
+}
+
+/**************************************************/
+/********************* COLORS *********************/
+/**************************************************/
+
+.has-primary-100-color,
+.primary-100 {
+  color: var(--primary-100);
+}
+
+.has-primary-300-color,
+.primary-300 {
+  color: var(--primary-300);
+}
+
+.has-primary-500-color,
+.primary-500 {
+  color: var(--primary-500);
+}
+
+.has-primary-700-color,
+.primary-700 {
+  color: var(--primary-700);
+}
+
+.has-primary-900-color,
+.primary-900 {
+  color: var(--primary-900);
+}
+
+.has-secondary-100-color,
+.secondary-100 {
+  color: var(--secondary-100);
+}
+
+.has-secondary-300-color,
+.secondary-300 {
+  color: var(--secondary-300);
+}
+
+.has-secondary-500-color,
+.secondary-500 {
+  color: var(--secondary-500);
+}
+
+.has-secondary-700-color,
+.secondary-700 {
+  color: var(--secondary-700);
+}
+
+.has-secondary-900-color,
+.secondary-900 {
+  color: var(--secondary-900);
+}
+
+.has-tertiary-100-color,
+.tertiary-100 {
+  color: var(--tertiary-100);
+}
+
+.has-tertiary-300-color,
+.tertiary-300 {
+  color: var(--tertiary-300);
+}
+
+.has-tertiary-500-color,
+.tertiary-500 {
+  color: var(--tertiary-500);
+}
+
+.has-tertiary-700-color,
+.tertiary-700 {
+  color: var(--tertiary-700);
+}
+
+.has-tertiary-900-color,
+.tertiary-900 {
+  color: var(--tertiary-900);
+}
+
+.has-ui-color-white-color,
+.ui-color-white {
+  color: var(--ui_color-white);
+}
+
+.has-ui-color-white-ambiant-color,
+.ui-color-white-ambiant {
+  color: var(--ui_color-white_ambiant);
+}
+
+.has-ui-color-grey-color,
+.ui-color-grey {
+  color: var(--ui_color-grey);
+}
+
+.has-ui-color-redmax-color,
+.ui-color-redmax {
+  color: var(--ui_color-redmax);
+}
+
+.has-ui-color-redmin-color,
+.ui-color-redmin {
+  color: var(--ui_color-redmin);
+}
+
+.has-background {
+  padding: var(--spacing-24);
+  border-radius: var(--spacing-16);
+  display: flex;
+  flex-direction: column;
+}
+
+.has-background > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.has-primary-100-background-color {
+  background-color: var(--primary-100);
+}
+.has-primary-300-background-color {
+  background-color: var(--primary-300);
+}
+.has-primary-500-background-color {
+  background-color: var(--primary-500);
+}
+.has-primary-700-background-color {
+  background-color: var(--primary-700);
+}
+.has-primary-900-background-color {
+  background-color: var(--primary-900);
+}
+
+.has-secondary-100-background-color {
+  background-color: var(--secondary-100);
+}
+.has-secondary-300-background-color {
+  background-color: var(--secondary-300);
+}
+.has-secondary-500-background-color {
+  background-color: var(--secondary-500);
+}
+.has-secondary-700-background-color {
+  background-color: var(--secondary-700);
+}
+.has-secondary-900-background-color {
+  background-color: var(--secondary-900);
+}
+
+.has-tertiary-100-background-color {
+  background-color: var(--tertiary-100);
+}
+.has-tertiary-300-background-color {
+  background-color: var(--tertiary-300);
+}
+.has-tertiary-500-background-color {
+  background-color: var(--tertiary-500);
+}
+.has-tertiary-700-background-color {
+  background-color: var(--tertiary-700);
+}
+.has-tertiary-900-background-color {
+  background-color: var(--tertiary-900);
+}
+
+.has-ui-color-white-background-color {
+  background-color: var(--ui_color-white);
+}
+.has-ui-color-white-ambiant-background-color {
+  background-color: var(--ui_color-white_ambiant);
+}
+.has-ui-color-grey-background-color {
+  background-color: var(--ui_color-grey);
+}
+.has-ui-color-redmax-background-color {
+  background-color: var(--ui_color-redmax);
+}
+.has-ui-color-redmin-background-color {
+  background-color: var(--ui_color-redmin);
+}
+
+/**************************************************/
+/****************** FONTS STYLES ******************/
+/**************************************************/
+
+.maj {
+  text-transform: uppercase;
+}
+
+.is-style-title-big,
+.title_big,
+h1 {
+  font-size: 2.625rem; /* 42px */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.is-style-title-med,
+.title_med,
+h2 {
+  font-size: 2rem; /* 32px */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.is-style-title-lit,
+.title_lit,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem; /* 24px */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.has-extra-large-font-size,
+.para_big {
+  font-size: 1.125rem; /* 18px */
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.has-large-font-size,
+.para {
+  font-size: 1rem; /* 16px */
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.has-medium-font-size,
+.para_lit {
+  font-size: 0.8125rem; /* 13px */
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.has-small-font-size,
+.legend {
+  font-size: 0.6875rem; /* 11px */
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+/**************************************************/
+/****************** SPACES STYLES *****************/
+/**************************************************/
+
+.mb8 {
+  margin-bottom: var(--spacing-8);
+}
+
+.mb16 {
+  margin-bottom: var(--spacing-16);
+}
+
+.mb24 {
+  margin-bottom: var(--spacing-24);
+}
+
+.mb32 {
+  margin-bottom: var(--spacing-32);
+}
+
+.mb40 {
+  margin-bottom: var(--spacing-40);
+}
+
+.mt-8 {
+  margin-top: calc(-1 * var(--spacing-8));
+}
+
+.mt-16 {
+  margin-top: calc(-1 * var(--spacing-16));
+}
+
+.mt-24 {
+  margin-top: calc(-1 * var(--spacing-24));
+}
+
+.mt-32 {
+  margin-top: calc(-1 * var(--spacing-32));
+}
+
+.mt-40 {
+  margin-top: calc(-1 * var(--spacing-40));
+}
+
+.pad0 {
+  padding: 0 !important;
+}
+
+.pad8 {
+  padding: var(--spacing-8);
+}
+
+.pad16 {
+  padding: var(--spacing-16);
+}
+
+.pad24 {
+  padding: var(--spacing-24);
+}
+
+.pad32 {
+  padding: var(--spacing-32);
+}
+
+.pad40 {
+  padding: var(--spacing-40);
+}
+
+.max1280 {
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+}
+
+/**************************************************/
+/********************* SR ONLY ********************/
+/**************************************************/
+
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/**************************************************/
+/******************* CONTAINERS *******************/
+/**************************************************/
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-16);
+}
+
+.container.vertical {
+  flex-direction: column;
+}
+
+.container.gap4 {
+  gap: var(--spacing-4);
+}
+
+.container.gap8 {
+  gap: var(--spacing-8);
+}
+
+.container.gap16 {
+  gap: var(--spacing-16);
+}
+
+.container.gap24 {
+  gap: var(--spacing-24);
+}
+
+/**************************************************/
+/********************* BUTTONS ********************/
+/**************************************************/
+
+.wp-block-button {
+  padding: 0 !important;
+}
+
+.wp-block-button > a,
+.button,
+input.mailpoet_submit {
+  display: inline-flex;
+  max-width: 311px;
+  padding: 12px var(--spacing-16);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-8);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: none;
+  border-radius: var(--spacing-40);
+}
+
+.is-style-primary > a,
+.button.primary,
+input.mailpoet_submit {
+  background: var(--primary-500);
+  color: var(--ui_color-white_ambiant);
+}
+
+.is-style-primary > a:hover,
+.button.primary:hover,
+input.mailpoet_submit:hover {
+  box-shadow: 0px 8px 16px 0px rgba(57, 21, 99, 0.24);
+  color: var(--ui_color-white);
+}
+
+.is-style-primary > a:focus,
+.button.primary:focus,
+input.mailpoet_submit:focus {
+  outline: 3px solid var(--primary-900);
+}
+
+.is-style-primary > a.has-secondary-700-background-color,
+.button.primary.has-secondary-700-background-color {
+  background: var(--secondary-700);
+}
+
+.is-style-secondary > a,
+.button.secondary {
+  border: 2px solid var(--primary-700);
+  color: var(--primary-700);
+  background: transparent;
+}
+
+.is-style-secondary > a.has-secondary-700-color,
+.button.secondary.has-secondary-700-color {
+  border: 2px solid var(--secondary-700);
+  color: var(--secondary-700);
+  background: transparent;
+}
+
+.is-style-secondary > a:hover,
+.button.secondary:hover {
+  background: var(--primary-100);
+}
+
+.is-style-secondary > a:focus,
+.button.secondary:focus {
+  outline: 2px solid var(--primary-700);
+}
+
+a.backlink {
+  display: inline-flex;
+  gap: var(--spacing-4);
+  align-items: center;
+  margin-bottom: var(--spacing-24);
+}
+
+/**************************************************/
+/****************** SLIDER ACTU *******************/
+/**************************************************/
+
+.slider ul::-webkit-scrollbar {
+  height: var(--spacing-8);
+}
+
+.slider ul::-webkit-scrollbar-track {
+  background: var(--ui_color-white);
+}
+
+.slider ul::-webkit-scrollbar-thumb {
+  background-color: var(--primary-500);
+  border-radius: var(--spacing-32);
+}
+
+/* Styles pour Firefox */
+.slider ul {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-500) var(--ui_color-white);
+}
+
+/**************************************************/
+/****************** SLIDER ACTU *******************/
+/**************************************************/
+
+div.actu_block {
+  padding: var(--spacing-40) 0;
+  background: var(--primary-100);
+}
+
+div.actu_block ul {
+  flex-wrap: nowrap;
+  padding: 0 var(--spacing-24) var(--spacing-16);
+  list-style: none;
+  overflow: auto;
+}
+
+div.actu_block ul a {
+  text-decoration: none;
+  border-radius: var(--spacing-24);
+  box-shadow: 0px var(--spacing-8) var(--spacing-16) 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+  height: 448px;
+  width: 304px;
+}
+
+div.actu_block ul a > div.actu_card_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(51, 19, 89, 0.8);
+  height: 100%;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div.actu_block ul a > img ~ div.actu_card_info {
+  background: rgba(51, 19, 89, 0.8);
+  backdrop-filter: blur(4px);
+  height: auto;
+}
+
+div.actu_block ul a > div.actu_card_info h3 {
+  margin: 0;
+}
+
+div.actu_block ul li.sticky a {
+  border: 2px solid rgb(52 8 105 / 80%);
+  border-bottom-color: rgb(52 8 105 / 80%) !important;
+}
+
+div.actu_block ul li.sticky a > div.actu_card_info {
+  background: rgb(52 8 105 / 80%);
+}
+
+div.actu_block .view_articles {
+  width: 100%;
+  padding: 0 var(--spacing-24);
+}
+
+/**************************************************/
+/*************** SLIDER PARTENAIRES ***************/
+/**************************************************/
+
+div.partenaires_block {
+  padding: var(--spacing-32) 0;
+  background: var(--ui_color-white_ambiant);
+}
+
+div.partenaires_block .partenaires_titre {
+  padding: 0 var(--spacing-32);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-16);
+}
+
+div.partenaires_block .partenaires_titre H2 {
+  margin: 0;
+}
+
+div.partenaires_block ul {
+  flex-wrap: nowrap;
+  padding: 0 var(--spacing-24);
+  list-style: none;
+  overflow: auto;
+  align-items: stretch;
+}
+
+div.partenaires_block ul li {
+  flex: 1;
+  display: flex;
+  margin-bottom: var(--spacing-24);
+}
+
+div.partenaires_block ul a {
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  min-height: 286px;
+  border-radius: 24px;
+  background: var(--ui_color-white);
+  box-shadow: 0px 8px 16px 0px rgba(95, 64, 131, 0.18);
+  justify-content: center;
+  width: 208px;
+}
+
+div.partenaires_block ul a img {
+  border-radius: var(--spacing-8);
+  overflow: hidden;
+}
+
+div.partenaires_block ul a h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+div.partenaires_block .view_articles {
+  width: 100%;
+  padding: 0 var(--spacing-24);
+}
+
+/**************************************************/
+/************* SLIDER APPEL AUX DONS **************/
+/**************************************************/
+
+div.appel_don {
+  padding: var(--spacing-32) 0 var(--spacing-8);
+  background: var(--ui_color-white_ambiant);
+}
+
+div.appel_don ul {
+  flex-wrap: nowrap;
+  padding: 0 var(--spacing-24) var(--spacing-16);
+  list-style: none;
+  overflow-x: auto;
+  align-items: stretch;
+}
+
+div.appel_don ul li {
+  overflow: hidden;
+  min-height: 286px;
+  border-radius: var(--spacing-24);
+  background: var(--primary-100);
+  border: 2px solid var(--primary-300);
+  justify-content: space-between;
+  width: 288px;
+  flex-shrink: 0;
+  gap: 0;
+}
+
+div.appel_don ul li img {
+  border-radius: var(--spacing-16);
+  overflow: hidden;
+  max-width: 100%;
+}
+
+div.appel_don ul li div.appel_info {
+  text-align: center;
+}
+
+div.appel_don ul li div.appel_info div.buttons_zone a.primary {
+  background: var(--primary-700);
+}
+
+div.appel_don ul li div.appel_info div.buttons_zone a.secondary {
+  color: var(--primary-500);
+  border-color: var(--primary-500);
+  font-weight: normal;
+  font-size: 1rem;
+  padding: var(--spacing-8) var(--spacing-16);
+}
+
+div.appel_don .view_articles {
+  padding-top: var(--spacing-8);
+}
+
+/**************************************************/
+/**************** SLIDER MECENES *****************/
+/**************************************************/
+
+div.mecenes {
+  padding: var(--spacing-32) 0 var(--spacing-8);
+  background: var(--secondary-700);
+}
+
+div.mecenes ul {
+  flex-wrap: nowrap;
+  padding: 0 var(--spacing-24) var(--spacing-16);
+  list-style: none;
+  overflow-x: auto;
+  align-items: stretch;
+}
+
+div.mecenes ul::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-700);
+}
+
+/* Styles pour Firefox */
+div.mecenes ul {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-700) var(--ui_color-white);
+}
+
+div.mecenes ul li {
+  overflow: hidden;
+  background: var(--ui_color-white);
+  justify-content: space-evenly;
+  width: 248px;
+  flex-shrink: 0;
+  border-radius: var(--spacing-24);
+  box-shadow: 0 var(--spacing-8) var(--spacing16) 0 rgba(95, 64, 131, 0.18);
+}
+
+div.mecenes ul li img {
+  border-radius: var(--spacing-16);
+  overflow: hidden;
+  max-width: 100%;
+}
+
+div.mecenes ul li div.mecenes_info {
+  justify-content: center;
+}
+
+div.mecenes ul li div.mecenes_info a.secondary {
+  color: var(--secondary-700);
+  border-color: var(--secondary-700);
+  font-weight: normal;
+  font-size: 1rem;
+  padding: var(--spacing-8) var(--spacing-16);
+}
+
+div.mecenes .view_articles {
+  padding-top: var(--spacing-8);
+}
+
+/**************************************************/
+/****************** PAGINATION ********************/
+/**************************************************/
+
+div.pagination {
+  justify-content: center;
+  margin-top: var(--spacing-40);
+}
+
+div.pagination .page-numbers {
+  display: flex;
+  border-radius: var(--spacing-4);
+  border: 1px solid var(--primary-700);
+  background: transparent;
+  color: var(--primary-700);
+  padding: var(--spacing-8) var(--spacing-8) 7px;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  text-decoration: none;
+}
+
+div.pagination .page-numbers.current {
+  background: var(--primary-100);
+  color: var(--primary-500);
+  border-color: transparent;
+}
+
+div.pagination .page-numbers.prev,
+div.pagination .page-numbers.next {
+  color: var(--primary-500);
+  border-color: var(--primary-500);
+  padding: var(--spacing-8) var(--spacing-16) 7px;
+}
+
+div.pagination a.page-numbers:hover {
+  border-style: dashed;
+}
+
+div.pagination a.page-numbers:focus {
+  outline: 3px solid var(--primary-700);
+}
+
+/**************************************************/
+/****************** TEXT FIELDS *******************/
+/**************************************************/
+
+form input,
+form textarea,
+form div.input_style input,
+form div.input_style textarea,
+#mailpoet_form_1 input:not([type="submit"]),
+#mailpoet_form_1 textarea {
+  border-radius: var(--spacing-8);
+  padding: var(--spacing-16) !important;
+  border: 1px solid var(--primary-500);
+  color: var(--primary-500);
+  background: var(--primary-100);
+  font-size: 1rem; /* 16px */
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 120%;
+  max-width: 400px;
+  width: 100%;
+}
+
+form input::placeholder,
+form textarea::placeholder,
+form div.input_style input::placeholder,
+form div.input_style textarea::placeholder,
+#mailpoet_form_1 input:not([type="submit"])::placeholder,
+#mailpoet_form_1 textarea::placeholder {
+  color: var(--primary-500);
+  font-weight: normal;
+}
+
+form input:focus,
+form textarea:focus,
+form div.input_style input:focus,
+form div.input_style textarea:focus,
+#mailpoet_form_1 input:not([type="submit"]):focus,
+#mailpoet_form_1 input:not([type="submit"]):focus,
+#mailpoet_form_1 textarea:focus {
+  border: 1px solid var(--primary-700);
+  outline: 2px solid var(--primary-700);
+  color: var(--primary-700);
+  background: var(--primary-100);
+}
+
+form label,
+form div.input_style label,
+#mailpoet_form_1 label {
+  padding-bottom: var(--spacing-4) !important;
+  color: var(--primary-500);
+  font-size: 0.6875rem;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 400px;
+  width: 100%;
+}
+
+form select {
+  border-radius: var(--spacing-8);
+  padding: var(--spacing-16) !important;
+  border: 1px solid var(--primary-500);
+  color: var(--primary-500);
+  background: var(--primary-100);
+  font-size: 1rem; /* 16px */
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+form label .mailpoet_required,
+form div.input_style label .mailpoet_required,
+#mailpoet_form_1 label .mailpoet_required {
+  color: var(--ui_color-redmax);
+}
+
+form label .mailpoet_required,
+form div.input_style label .mailpoet_required,
+#mailpoet_form_1 label .mailpoet_required {
+  color: var(--ui_color-redmax);
+}
+
+body.mailpoet_page-template-default label {
+  display: block;
+}
+
+body.mailpoet_page-template-default form {
+  display: flex;
+  gap: var(--spacing-24);
+  flex-direction: column;
+}
+
+/**************************************************/
+/****************** UI CARDS **********************/
+/**************************************************/
+
+.ui_card_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  padding: var(--spacing-16);
+}
+
+.ui_card_container > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-24);
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0;
+}
+
+.ui_card {
+  padding: var(--spacing-24);
+  border-radius: var(--spacing-16);
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1280px) {
+  .ui_card {
+    padding-left: var(--spacing-32) !important;
+    padding-right: var(--spacing-32) !important;
+  }
+}
+
+.ui_card > div:nth-child(1) h2,
+.ui_card > div:nth-child(1) h3 {
+  padding-top: 0;
+  margin-top: var(--spacing-8);
+}
+
+/**************************************************/
+/****************** COLONNES **********************/
+/**************************************************/
+
+.is-layout-flex.wp-block-columns {
+  flex-direction: row;
+  gap: var(--spacing-16);
+  align-items: center;
+}
+
+/**************************************************/
+/****************** BACKLINES *********************/
+/**************************************************/
+
+.backline {
+  position: relative;
+  z-index: 1;
+}
+
+.backline::after {
+  content: "";
+  background: url(img/backlinevec.svg) center center no-repeat;
+  display: block;
+  width: 120vw;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  background-size: contain;
+}
+
+/**************************************************/
+/******************* GALLERY **********************/
+/**************************************************/
+
+figure.wp-block-gallery {
+  display: grid;
+  gap: var(--spacing-24);
+  grid-auto-flow: dense;
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-16);
+}
+
+figure.wp-block-gallery.columns-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+figure.wp-block-gallery.columns-2 {
+  grid-template-columns: repeat(1, 1fr);
+}
+figure.wp-block-gallery.columns-3 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 600px) {
+  figure.wp-block-gallery.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  figure.wp-block-gallery.columns-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  figure.wp-block-gallery.columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+figure.wp-block-gallery.is-cropped .wp-block-image {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+figure.wp-block-gallery.is-cropped .wp-block-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

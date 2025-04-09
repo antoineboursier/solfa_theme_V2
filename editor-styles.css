@@ -1,0 +1,199 @@
+/*
+Theme Name: Solfa V2
+Theme URL: https://www.solfa.fr
+Version: V2
+*/
+
+/******* AFFICHAGE D'UN CONTOUR POUR L'ACCESS EN BACK COULEUR ****/
+
+:root {
+  --primary-100: rgba(242, 237, 247, 1);
+  --primary-300: rgba(197, 163, 236, 1);
+  --primary-500: rgba(132, 84, 189, 1);
+  --primary-700: rgba(95, 64, 131, 1);
+  --primary-900: rgba(51, 19, 89, 1);
+  --secondary-100: rgba(224, 241, 235, 1);
+  --secondary-300: rgba(151, 236, 205, 1);
+  --secondary-500: rgba(53, 188, 139, 1);
+  --secondary-700: rgba(9, 120, 105, 1);
+  --secondary-900: rgba(7, 92, 81, 1);
+  --tertiary-100: rgba(219, 239, 255, 1);
+  --tertiary-300: rgba(134, 193, 242, 1);
+  --tertiary-500: rgba(59, 143, 212, 1);
+  --tertiary-700: rgba(27, 110, 182, 1);
+  --tertiary-900: rgba(21, 81, 130, 1);
+  --ui_color-white: rgba(255, 255, 255, 1);
+  --ui_color-white_ambiant: rgba(250, 248, 245, 1);
+  --ui_color-grey: rgba(90, 90, 90, 1);
+  --ui_color-redmax: rgba(193, 39, 95, 1);
+  --ui_color-redmin: rgba(250, 238, 242, 1);
+}
+
+button.components-circular-option-picker__option[aria-label*="Primary 500"] {
+  outline: 2px dashed cornflowerblue;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border-radius: 40px;
+  border: 2px solid white;
+}
+
+button.components-circular-option-picker__option[aria-label*="Secondary 700"] {
+  outline: 2px dashed cornflowerblue;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border-radius: 40px;
+  border: 2px solid white;
+}
+
+button.components-circular-option-picker__option[aria-label*="Tertiary 700"] {
+  outline: 2px dashed cornflowerblue;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border-radius: 40px;
+  border: 2px solid white;
+}
+
+/******* BOUTON FRONT = BOUTON BACK ****/
+
+.wp-block-button.is-style-primary .wp-block-button__link {
+  background: rgba(95, 64, 131, 1);
+  color: white;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: none;
+  border-radius: 40px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.wp-block-button.is-style-secondary .wp-block-button__link {
+  border: 2px solid rgba(95, 64, 131, 1);
+  color: rgba(95, 64, 131, 1);
+  background: transparent;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.wp-block-button.is-style-secondary
+  .wp-block-button__link.has-secondary-700-color {
+  border: 2px solid rgb(9, 120, 105);
+  color: rgb(9, 120, 105);
+}
+
+/******* VOIR LES EMPILEMENTS ****/
+
+.wp-block-group {
+  outline: 2px dashed #cccccc;
+  padding: 8px;
+}
+.wp-block-columns {
+  outline: 2px dashed #ffcc00;
+  padding: 8px;
+}
+
+.wp-block-column {
+  outline: 2px dashed #00ccff;
+  padding: 8px;
+}
+
+.wp-block-gallery {
+  outline: 2px dashed #cc00ff;
+  padding: 8px;
+}
+
+/* Styles pour les tailles de titre */
+
+.is-style-title-big,
+.wp-block-paragraph.is-style-title-big,
+.block-editor-writing-flow h1 {
+  font-size: 2.625rem; /* ou 42px */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.post-type-page .block-editor-writing-flow h1,
+.post-type-hebergements .block-editor-writing-flow h1 {
+  text-transform: uppercase;
+}
+
+.is-style-title-med,
+.wp-block-paragraph.is-style-title-med,
+.block-editor-writing-flow h2 {
+  font-size: 2rem; /* ou 32px */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+.is-style-title-lit,
+.wp-block-paragraph.is-style-title-lit,
+.block-editor-writing-flow h3,
+.block-editor-writing-flow h4,
+.block-editor-writing-flow h5,
+.block-editor-writing-flow h6 {
+  font-size: 1.5rem; /* ou 24px */
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  line-height: 90%;
+}
+
+/* Styles pour les tailles de texte (S, M, L, XL) */
+.has-small-font-size {
+  font-size: 0.6875rem; /* ou 11px, correspond à .legend */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.has-medium-font-size {
+  font-size: 0.8125rem; /* ou 13px, correspond à .para_lit */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.has-large-font-size,
+.wp-block-paragraph,
+.wp-block-list {
+  font-size: 1rem; /* ou 16px, correspond à .para */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.has-extra-large-font-size {
+  font-size: 1.125rem; /* ou 18px, correspond à .para_big */
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.post-type-page .block-editor-writing-flow > *,
+.post-type-hebergements .block-editor-writing-flow > * {
+  color: var(--secondary-700);
+}
+
+.post-type-post .block-editor-writing-flow > * {
+  color: var(--primary-700);
+}
+
+.post-type-page .block-editor-writing-flow strong,
+.post-type-hebergements .block-editor-writing-flow strong {
+  color: inherit !important;
+}
+
+.wp-block-spacer {
+  background: #ebe8e5;
+}
+
+.editor-styles-wrapper {
+  background-color: #faf8f5;
+}
